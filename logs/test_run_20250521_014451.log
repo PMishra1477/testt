@@ -1,0 +1,1141 @@
+2025-05-21 01:44:51,548 - __main__ - INFO - Found 31 models in configuration
+2025-05-21 01:44:51,548 - __main__ - INFO - Testing 31 models: claude_3_opus, claude_3_5_sonnet, claude_3_5_haiku, claude_3_7_sonnet, gemini_2_5_pro_preview_05_06, gemini_2_5_pro_preview_03_25, gemini_2_5_pro_exp_03_25, gemini_2_5_flash_preview_04_17, gemini_2_5_flash_preview_04_17_thinking, gemini_2_0_pro_exp, gemini_2_0_flash, gemini_2_0_flash_thinking_exp, gemini_1_5_pro, gemini_1_5_flash, mistral_small, mistral_medium, mistral_large, gpt_4_5_preview, gpt_4o, gpt_4_1, gpt_4_turbo, o1_preview, o1_pro, command_a_03_2025, command_r_plus_08_2024, command_r_plus_04_2024, command_r_plus, command_r_08_2024_v004, command_r_08_2024_v003, command_r_03_2024, command_r
+2025-05-21 01:44:51,589 - __main__ - INFO - Using gpt_4o for evaluation
+2025-05-21 01:44:51,589 - src.test_runner.executor - INFO - Running factual test with long context on claude_3_opus
+2025-05-21 01:44:51,589 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:44:51,589 - src.test_runner.executor - INFO - Running factual test with long context on claude_3_5_sonnet
+2025-05-21 01:44:51,589 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:44:51,589 - src.test_runner.executor - INFO - Running factual test with long context on claude_3_5_haiku
+2025-05-21 01:44:51,589 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:44:51,589 - src.test_runner.executor - INFO - Running factual test with long context on claude_3_7_sonnet
+2025-05-21 01:44:51,589 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:44:51,589 - src.test_runner.executor - INFO - Running factual test with long context on gemini_2_5_pro_preview_05_06
+2025-05-21 01:44:51,595 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:44:51,627 - src.test_runner.executor - INFO - Generating response from gemini_2_5_pro_preview_05_06
+2025-05-21 01:44:52,404 - src.test_runner.executor - INFO - Generating response from claude_3_opus
+2025-05-21 01:44:52,414 - src.test_runner.executor - INFO - Generating response from claude_3_7_sonnet
+2025-05-21 01:44:52,424 - src.test_runner.executor - INFO - Generating response from claude_3_5_haiku
+2025-05-21 01:44:52,434 - src.test_runner.executor - INFO - Generating response from claude_3_5_sonnet
+2025-05-21 01:44:52,997 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2025-05-21 01:44:53,002 - src.test_runner.retry - WARNING - Error on attempt 1/4, retrying: Anthropic API error: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20240307'}}
+2025-05-21 01:44:53,002 - src.test_runner.retry - INFO - Retrying in 2.02 seconds...
+2025-05-21 01:44:53,594 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2025-05-21 01:44:53,594 - src.test_runner.retry - WARNING - Error on attempt 1/4, retrying: Anthropic API error: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-7-sonnet-20240620'}}
+2025-05-21 01:44:53,594 - src.test_runner.retry - INFO - Retrying in 2.16 seconds...
+2025-05-21 01:44:55,430 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2025-05-21 01:44:55,430 - src.test_runner.retry - WARNING - Error on attempt 2/4, retrying: Anthropic API error: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20240307'}}
+2025-05-21 01:44:55,432 - src.test_runner.retry - INFO - Retrying in 4.04 seconds...
+2025-05-21 01:44:56,664 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2025-05-21 01:44:56,666 - src.test_runner.retry - WARNING - Error on attempt 2/4, retrying: Anthropic API error: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-7-sonnet-20240620'}}
+2025-05-21 01:44:56,666 - src.test_runner.retry - INFO - Retrying in 4.32 seconds...
+2025-05-21 01:44:59,794 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2025-05-21 01:44:59,796 - src.test_runner.retry - WARNING - Error on attempt 3/4, retrying: Anthropic API error: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20240307'}}
+2025-05-21 01:44:59,796 - src.test_runner.retry - INFO - Retrying in 8.08 seconds...
+2025-05-21 01:45:00,326 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-21 01:45:01,334 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2025-05-21 01:45:01,336 - src.test_runner.retry - WARNING - Error on attempt 3/4, retrying: Anthropic API error: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-7-sonnet-20240620'}}
+2025-05-21 01:45:01,336 - src.test_runner.retry - INFO - Retrying in 8.64 seconds...
+2025-05-21 01:45:04,754 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-21 01:45:07,104 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-21 01:45:08,288 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2025-05-21 01:45:08,288 - src.test_runner.retry - ERROR - All retry attempts failed: Anthropic API error: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20240307'}}
+2025-05-21 01:45:08,288 - src.test_runner.executor - ERROR - Error running test for claude_3_5_haiku: Anthropic API error: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20240307'}}
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\anthropic_client.py", line 38, in generate
+    response = self.client.messages.create(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\anthropic\_utils\_utils.py", line 283, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\anthropic\resources\messages\messages.py", line 954, in create
+    return self._post(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\anthropic\_base_client.py", line 1290, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\anthropic\_base_client.py", line 1085, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20240307'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 179, in run_test
+    response = self.retry_handler.with_retry(
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 106, in with_retry
+    raise last_exception
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 50, in with_retry
+    return func(*args, **kwargs)
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 180, in <lambda>
+    lambda: client.generate(full_prompt, model_config),
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\anthropic_client.py", line 79, in generate
+    raise Exception(f"Anthropic API error: {str(e)}")
+Exception: Anthropic API error: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-haiku-20240307'}}
+2025-05-21 01:45:08,296 - src.test_runner.executor - INFO - Running factual test with long context on gemini_2_5_pro_preview_03_25
+2025-05-21 01:45:08,296 - src.test_runner.executor - INFO - Completed test for claude_3_5_haiku, factual, long
+2025-05-21 01:45:08,296 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:45:08,306 - src.test_runner.executor - INFO - Generating response from gemini_2_5_pro_preview_03_25
+2025-05-21 01:45:09,009 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-21 01:45:10,576 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2025-05-21 01:45:10,576 - src.test_runner.retry - ERROR - All retry attempts failed: Anthropic API error: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-7-sonnet-20240620'}}
+2025-05-21 01:45:10,576 - src.test_runner.executor - ERROR - Error running test for claude_3_7_sonnet: Anthropic API error: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-7-sonnet-20240620'}}
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\anthropic_client.py", line 38, in generate
+    response = self.client.messages.create(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\anthropic\_utils\_utils.py", line 283, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\anthropic\resources\messages\messages.py", line 954, in create
+    return self._post(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\anthropic\_base_client.py", line 1290, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\anthropic\_base_client.py", line 1085, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.NotFoundError: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-7-sonnet-20240620'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 179, in run_test
+    response = self.retry_handler.with_retry(
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 106, in with_retry
+    raise last_exception
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 50, in with_retry
+    return func(*args, **kwargs)
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 180, in <lambda>
+    lambda: client.generate(full_prompt, model_config),
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\anthropic_client.py", line 79, in generate
+    raise Exception(f"Anthropic API error: {str(e)}")
+Exception: Anthropic API error: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-7-sonnet-20240620'}}
+2025-05-21 01:45:10,576 - src.test_runner.executor - INFO - Running factual test with long context on gemini_2_5_pro_exp_03_25
+2025-05-21 01:45:10,580 - src.test_runner.executor - INFO - Completed test for claude_3_7_sonnet, factual, long
+2025-05-21 01:45:10,580 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:45:10,586 - src.test_runner.executor - INFO - Generating response from gemini_2_5_pro_exp_03_25
+2025-05-21 01:45:12,129 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-21 01:45:12,135 - src.test_runner.executor - INFO - Running factual test with long context on gemini_2_5_flash_preview_04_17
+2025-05-21 01:45:12,135 - src.test_runner.executor - INFO - Completed test for claude_3_5_sonnet, factual, long
+2025-05-21 01:45:12,135 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:45:12,146 - src.test_runner.executor - INFO - Generating response from gemini_2_5_flash_preview_04_17
+2025-05-21 01:45:12,234 - src.test_runner.retry - WARNING - Rate limit hit on attempt 1/4, retrying...
+2025-05-21 01:45:12,234 - src.test_runner.retry - INFO - Retrying in 2.00 seconds...
+2025-05-21 01:45:13,486 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-21 01:45:13,498 - src.test_runner.executor - INFO - Running factual test with long context on gemini_2_5_flash_preview_04_17_thinking
+2025-05-21 01:45:13,498 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:45:13,498 - src.test_runner.executor - INFO - Completed test for claude_3_opus, factual, long
+2025-05-21 01:45:13,509 - src.test_runner.executor - INFO - Generating response from gemini_2_5_flash_preview_04_17_thinking
+2025-05-21 01:45:15,157 - src.test_runner.retry - WARNING - Rate limit hit on attempt 2/4, retrying...
+2025-05-21 01:45:15,157 - src.test_runner.retry - INFO - Retrying in 4.00 seconds...
+2025-05-21 01:45:17,995 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-21 01:45:19,481 - src.test_runner.retry - WARNING - Rate limit hit on attempt 3/4, retrying...
+2025-05-21 01:45:19,481 - src.test_runner.retry - INFO - Retrying in 8.56 seconds...
+2025-05-21 01:45:22,195 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-21 01:45:22,205 - src.test_runner.executor - INFO - Running factual test with long context on gemini_2_0_pro_exp
+2025-05-21 01:45:22,205 - src.test_runner.executor - INFO - Completed test for gemini_2_5_pro_preview_05_06, factual, long
+2025-05-21 01:45:22,205 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:45:22,223 - src.test_runner.executor - INFO - Generating response from gemini_2_0_pro_exp
+2025-05-21 01:45:22,395 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-21 01:45:23,879 - src.test_runner.retry - WARNING - Rate limit hit on attempt 1/4, retrying...
+2025-05-21 01:45:23,879 - src.test_runner.retry - INFO - Retrying in 2.04 seconds...
+2025-05-21 01:45:25,865 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-21 01:45:25,867 - src.test_runner.executor - INFO - Running factual test with long context on gemini_2_0_flash
+2025-05-21 01:45:25,867 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:45:25,867 - src.test_runner.executor - INFO - Completed test for gemini_2_5_flash_preview_04_17_thinking, factual, long
+2025-05-21 01:45:25,875 - src.test_runner.executor - INFO - Generating response from gemini_2_0_flash
+2025-05-21 01:45:26,078 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-21 01:45:27,546 - src.test_runner.retry - WARNING - Rate limit hit on attempt 2/4, retrying...
+2025-05-21 01:45:27,546 - src.test_runner.retry - INFO - Retrying in 4.12 seconds...
+2025-05-21 01:45:28,380 - src.test_runner.retry - ERROR - All retry attempts failed: Google API error: 429 You exceeded your current quota. Please migrate to Gemini 2.5 Pro Preview (models/gemini-2.5-pro-preview-03-25) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-pro-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_paid_tier_input_token_count"
+  quota_id: "GenerateContentPaidTierInputTokensPerModelPerMinute"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-pro-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 33
+}
+]
+2025-05-21 01:45:28,383 - src.test_runner.executor - ERROR - Error running test for gemini_2_5_pro_exp_03_25: Google API error: 429 You exceeded your current quota. Please migrate to Gemini 2.5 Pro Preview (models/gemini-2.5-pro-preview-03-25) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-pro-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_paid_tier_input_token_count"
+  quota_id: "GenerateContentPaidTierInputTokensPerModelPerMinute"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-pro-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 33
+}
+]
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\google_client.py", line 42, in generate
+    response = model.generate_content(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota. Please migrate to Gemini 2.5 Pro Preview (models/gemini-2.5-pro-preview-03-25) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-pro-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_paid_tier_input_token_count"
+  quota_id: "GenerateContentPaidTierInputTokensPerModelPerMinute"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-pro-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 33
+}
+]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 179, in run_test
+    response = self.retry_handler.with_retry(
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 106, in with_retry
+    raise last_exception
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 50, in with_retry
+    return func(*args, **kwargs)
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 180, in <lambda>
+    lambda: client.generate(full_prompt, model_config),
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\google_client.py", line 81, in generate
+    raise Exception(f"Google API error: {str(e)}")
+Exception: Google API error: 429 You exceeded your current quota. Please migrate to Gemini 2.5 Pro Preview (models/gemini-2.5-pro-preview-03-25) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-pro-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_paid_tier_input_token_count"
+  quota_id: "GenerateContentPaidTierInputTokensPerModelPerMinute"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-pro-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 33
+}
+]
+2025-05-21 01:45:28,391 - src.test_runner.executor - INFO - Running factual test with long context on gemini_2_0_flash_thinking_exp
+2025-05-21 01:45:28,391 - src.test_runner.executor - INFO - Completed test for gemini_2_5_pro_exp_03_25, factual, long
+2025-05-21 01:45:28,391 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:45:28,398 - src.test_runner.executor - INFO - Generating response from gemini_2_0_flash_thinking_exp
+2025-05-21 01:45:30,402 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-21 01:45:31,347 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-21 01:45:31,355 - src.test_runner.executor - INFO - Running factual test with long context on gemini_1_5_pro
+2025-05-21 01:45:31,355 - src.test_runner.executor - INFO - Completed test for gemini_2_5_flash_preview_04_17, factual, long
+2025-05-21 01:45:31,355 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:45:31,365 - src.test_runner.executor - INFO - Generating response from gemini_1_5_pro
+2025-05-21 01:45:33,065 - src.test_runner.retry - WARNING - Rate limit hit on attempt 3/4, retrying...
+2025-05-21 01:45:33,065 - src.test_runner.retry - INFO - Retrying in 8.08 seconds...
+2025-05-21 01:45:35,657 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-21 01:45:35,723 - src.test_runner.executor - INFO - Running factual test with long context on gemini_1_5_flash
+2025-05-21 01:45:35,723 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:45:35,725 - src.test_runner.executor - INFO - Completed test for gemini_2_5_pro_preview_03_25, factual, long
+2025-05-21 01:45:35,727 - src.test_runner.executor - INFO - Generating response from gemini_1_5_flash
+2025-05-21 01:45:41,095 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-21 01:45:41,485 - src.test_runner.retry - ERROR - All retry attempts failed: Google API error: 429 You exceeded your current quota. Please migrate to Gemini 2.5 Pro Preview (models/gemini-2.5-pro-preview-03-25) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-pro-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_paid_tier_input_token_count"
+  quota_id: "GenerateContentPaidTierInputTokensPerModelPerMinute"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-pro-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 20
+}
+]
+2025-05-21 01:45:41,485 - src.test_runner.executor - ERROR - Error running test for gemini_2_0_pro_exp: Google API error: 429 You exceeded your current quota. Please migrate to Gemini 2.5 Pro Preview (models/gemini-2.5-pro-preview-03-25) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-pro-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_paid_tier_input_token_count"
+  quota_id: "GenerateContentPaidTierInputTokensPerModelPerMinute"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-pro-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 20
+}
+]
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\google_client.py", line 42, in generate
+    response = model.generate_content(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota. Please migrate to Gemini 2.5 Pro Preview (models/gemini-2.5-pro-preview-03-25) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-pro-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_paid_tier_input_token_count"
+  quota_id: "GenerateContentPaidTierInputTokensPerModelPerMinute"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-pro-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 20
+}
+]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 179, in run_test
+    response = self.retry_handler.with_retry(
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 106, in with_retry
+    raise last_exception
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 50, in with_retry
+    return func(*args, **kwargs)
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 180, in <lambda>
+    lambda: client.generate(full_prompt, model_config),
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\google_client.py", line 81, in generate
+    raise Exception(f"Google API error: {str(e)}")
+Exception: Google API error: 429 You exceeded your current quota. Please migrate to Gemini 2.5 Pro Preview (models/gemini-2.5-pro-preview-03-25) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-pro-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_paid_tier_input_token_count"
+  quota_id: "GenerateContentPaidTierInputTokensPerModelPerMinute"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-pro-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 20
+}
+]
+2025-05-21 01:45:41,485 - src.test_runner.executor - INFO - Running factual test with long context on mistral_small
+2025-05-21 01:45:41,485 - src.test_runner.executor - INFO - Completed test for gemini_2_0_pro_exp, factual, long
+2025-05-21 01:45:41,485 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:45:41,495 - src.utils.config - ERROR - Error creating client for model mistral_small: This client is deprecated. To migrate to the new client, please refer to this guide: https://github.com/mistralai/client-python/blob/main/MIGRATION.md. If you need to use this client anyway, pin your version to 0.4.2.
+2025-05-21 01:45:41,495 - src.test_runner.executor - INFO - Running factual test with long context on mistral_medium
+2025-05-21 01:45:41,495 - src.test_runner.executor - INFO - Completed test for mistral_small, factual, long
+2025-05-21 01:45:41,495 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:45:41,505 - src.utils.config - ERROR - Error creating client for model mistral_medium: This client is deprecated. To migrate to the new client, please refer to this guide: https://github.com/mistralai/client-python/blob/main/MIGRATION.md. If you need to use this client anyway, pin your version to 0.4.2.
+2025-05-21 01:45:41,505 - src.test_runner.executor - INFO - Running factual test with long context on mistral_large
+2025-05-21 01:45:41,505 - src.test_runner.executor - INFO - Completed test for mistral_medium, factual, long
+2025-05-21 01:45:41,505 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:45:41,515 - src.utils.config - ERROR - Error creating client for model mistral_large: This client is deprecated. To migrate to the new client, please refer to this guide: https://github.com/mistralai/client-python/blob/main/MIGRATION.md. If you need to use this client anyway, pin your version to 0.4.2.
+2025-05-21 01:45:41,515 - src.test_runner.executor - INFO - Running factual test with long context on gpt_4_5_preview
+2025-05-21 01:45:41,515 - src.test_runner.executor - INFO - Completed test for mistral_large, factual, long
+2025-05-21 01:45:41,515 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:45:41,930 - src.test_runner.executor - INFO - Generating response from gpt_4_5_preview
+2025-05-21 01:45:42,500 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-05-21 01:45:42,502 - src.test_runner.retry - WARNING - Error on attempt 1/4, retrying: OpenAI API error: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 16384 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+2025-05-21 01:45:42,502 - src.test_runner.retry - INFO - Retrying in 2.08 seconds...
+2025-05-21 01:45:45,015 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-05-21 01:45:45,015 - src.test_runner.retry - WARNING - Error on attempt 2/4, retrying: OpenAI API error: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 16384 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+2025-05-21 01:45:45,015 - src.test_runner.retry - INFO - Retrying in 4.16 seconds...
+2025-05-21 01:45:46,636 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-21 01:45:46,790 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-21 01:45:46,796 - src.test_runner.executor - INFO - Running factual test with long context on gpt_4o
+2025-05-21 01:45:46,796 - src.test_runner.executor - INFO - Completed test for gemini_2_0_flash_thinking_exp, factual, long
+2025-05-21 01:45:46,796 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:45:47,215 - src.test_runner.executor - INFO - Generating response from gpt_4o
+2025-05-21 01:45:47,876 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-05-21 01:45:47,876 - src.test_runner.retry - WARNING - Error on attempt 1/4, retrying: OpenAI API error: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 16384 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+2025-05-21 01:45:47,876 - src.test_runner.retry - INFO - Retrying in 2.08 seconds...
+2025-05-21 01:45:49,689 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-05-21 01:45:49,689 - src.test_runner.retry - WARNING - Error on attempt 3/4, retrying: OpenAI API error: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 16384 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+2025-05-21 01:45:49,689 - src.test_runner.retry - INFO - Retrying in 8.32 seconds...
+2025-05-21 01:45:50,430 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-05-21 01:45:50,434 - src.test_runner.retry - WARNING - Error on attempt 2/4, retrying: OpenAI API error: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 16384 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+2025-05-21 01:45:50,434 - src.test_runner.retry - INFO - Retrying in 4.16 seconds...
+2025-05-21 01:45:52,661 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-21 01:45:54,577 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-21 01:45:55,398 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-21 01:45:55,400 - src.test_runner.executor - INFO - Running factual test with long context on gpt_4_1
+2025-05-21 01:45:55,400 - src.test_runner.executor - INFO - Completed test for gemini_1_5_flash, factual, long
+2025-05-21 01:45:55,400 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:45:55,846 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-05-21 01:45:55,846 - src.test_runner.retry - WARNING - Error on attempt 3/4, retrying: OpenAI API error: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 16384 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+2025-05-21 01:45:55,846 - src.test_runner.retry - INFO - Retrying in 8.32 seconds...
+2025-05-21 01:45:55,899 - src.test_runner.executor - INFO - Generating response from gpt_4_1
+2025-05-21 01:45:56,549 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-05-21 01:45:56,550 - src.test_runner.retry - WARNING - Error on attempt 1/4, retrying: OpenAI API error: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 32768 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+2025-05-21 01:45:56,550 - src.test_runner.retry - INFO - Retrying in 2.02 seconds...
+2025-05-21 01:45:58,544 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-21 01:45:58,547 - src.test_runner.executor - INFO - Running factual test with long context on gpt_4_turbo
+2025-05-21 01:45:58,547 - src.test_runner.executor - INFO - Completed test for gemini_1_5_pro, factual, long
+2025-05-21 01:45:58,547 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:45:58,629 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-05-21 01:45:58,629 - src.test_runner.retry - ERROR - All retry attempts failed: OpenAI API error: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 16384 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+2025-05-21 01:45:58,629 - src.test_runner.executor - ERROR - Error running test for gpt_4_5_preview: OpenAI API error: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 16384 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\openai_client.py", line 44, in generate
+    response = self.client.chat.completions.create(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\openai\resources\chat\completions\completions.py", line 925, in create
+    return self._post(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\openai\_base_client.py", line 1239, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\openai\_base_client.py", line 1034, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 16384 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 179, in run_test
+    response = self.retry_handler.with_retry(
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 106, in with_retry
+    raise last_exception
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 50, in with_retry
+    return func(*args, **kwargs)
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 180, in <lambda>
+    lambda: client.generate(full_prompt, model_config),
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\openai_client.py", line 77, in generate
+    raise Exception(f"OpenAI API error: {str(e)}")
+Exception: OpenAI API error: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 16384 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+2025-05-21 01:45:58,633 - src.test_runner.executor - INFO - Running factual test with long context on o1_preview
+2025-05-21 01:45:58,636 - src.test_runner.executor - INFO - Completed test for gpt_4_5_preview, factual, long
+2025-05-21 01:45:58,636 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:45:59,039 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-05-21 01:45:59,041 - src.test_runner.retry - WARNING - Error on attempt 2/4, retrying: OpenAI API error: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 32768 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+2025-05-21 01:45:59,041 - src.test_runner.retry - INFO - Retrying in 4.04 seconds...
+2025-05-21 01:45:59,173 - src.test_runner.executor - INFO - Generating response from gpt_4_turbo
+2025-05-21 01:45:59,238 - src.test_runner.executor - INFO - Generating response from o1_preview
+2025-05-21 01:45:59,596 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-05-21 01:45:59,598 - src.test_runner.retry - WARNING - Error on attempt 1/4, retrying: OpenAI API error: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 4096 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+2025-05-21 01:45:59,598 - src.test_runner.retry - INFO - Retrying in 2.12 seconds...
+2025-05-21 01:46:00,206 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:00,206 - src.test_runner.retry - WARNING - Error on attempt 1/4, retrying: OpenAI API error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-05-21 01:46:00,206 - src.test_runner.retry - INFO - Retrying in 2.06 seconds...
+2025-05-21 01:46:02,173 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:02,176 - src.test_runner.retry - WARNING - Error on attempt 2/4, retrying: OpenAI API error: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 4096 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+2025-05-21 01:46:02,176 - src.test_runner.retry - INFO - Retrying in 4.24 seconds...
+2025-05-21 01:46:02,663 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:02,663 - src.test_runner.retry - WARNING - Error on attempt 2/4, retrying: OpenAI API error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-05-21 01:46:02,663 - src.test_runner.retry - INFO - Retrying in 4.12 seconds...
+2025-05-21 01:46:03,361 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-21 01:46:03,361 - src.test_runner.executor - INFO - Running factual test with long context on o1_pro
+2025-05-21 01:46:03,361 - src.test_runner.executor - INFO - Completed test for gemini_2_0_flash, factual, long
+2025-05-21 01:46:03,361 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:46:03,464 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:03,466 - src.test_runner.retry - WARNING - Error on attempt 3/4, retrying: OpenAI API error: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 32768 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+2025-05-21 01:46:03,466 - src.test_runner.retry - INFO - Retrying in 8.08 seconds...
+2025-05-21 01:46:03,816 - src.test_runner.executor - INFO - Generating response from o1_pro
+2025-05-21 01:46:04,296 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-05-21 01:46:04,296 - src.test_runner.retry - WARNING - Error on attempt 1/4, retrying: OpenAI API error: Error code: 404 - {'error': {'message': 'This model is only supported in v1/responses and not in v1/chat/completions.', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-05-21 01:46:04,298 - src.test_runner.retry - INFO - Retrying in 2.00 seconds...
+2025-05-21 01:46:04,626 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:04,626 - src.test_runner.retry - ERROR - All retry attempts failed: OpenAI API error: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 16384 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+2025-05-21 01:46:04,626 - src.test_runner.executor - ERROR - Error running test for gpt_4o: OpenAI API error: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 16384 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\openai_client.py", line 44, in generate
+    response = self.client.chat.completions.create(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\openai\resources\chat\completions\completions.py", line 925, in create
+    return self._post(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\openai\_base_client.py", line 1239, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\openai\_base_client.py", line 1034, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 16384 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 179, in run_test
+    response = self.retry_handler.with_retry(
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 106, in with_retry
+    raise last_exception
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 50, in with_retry
+    return func(*args, **kwargs)
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 180, in <lambda>
+    lambda: client.generate(full_prompt, model_config),
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\openai_client.py", line 77, in generate
+    raise Exception(f"OpenAI API error: {str(e)}")
+Exception: OpenAI API error: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 16384 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+2025-05-21 01:46:04,629 - src.test_runner.executor - INFO - Running factual test with long context on command_a_03_2025
+2025-05-21 01:46:04,629 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:46:04,629 - src.test_runner.executor - INFO - Completed test for gpt_4o, factual, long
+2025-05-21 01:46:05,064 - src.test_runner.executor - INFO - Generating response from command_a_03_2025
+2025-05-21 01:46:05,616 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:05,616 - src.test_runner.retry - WARNING - Error on attempt 1/4, retrying: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 8192, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:05,620 - src.test_runner.retry - INFO - Retrying in 2.02 seconds...
+2025-05-21 01:46:06,821 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:06,821 - src.test_runner.retry - WARNING - Error on attempt 3/4, retrying: OpenAI API error: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 4096 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+2025-05-21 01:46:06,821 - src.test_runner.retry - INFO - Retrying in 8.48 seconds...
+2025-05-21 01:46:07,176 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:07,176 - src.test_runner.retry - WARNING - Error on attempt 3/4, retrying: OpenAI API error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-05-21 01:46:07,176 - src.test_runner.retry - INFO - Retrying in 8.24 seconds...
+2025-05-21 01:46:07,291 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-05-21 01:46:07,291 - src.test_runner.retry - WARNING - Error on attempt 2/4, retrying: OpenAI API error: Error code: 404 - {'error': {'message': 'This model is only supported in v1/responses and not in v1/chat/completions.', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-05-21 01:46:07,291 - src.test_runner.retry - INFO - Retrying in 4.00 seconds...
+2025-05-21 01:46:07,943 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:07,966 - src.test_runner.retry - WARNING - Error on attempt 2/4, retrying: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 8192, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:07,968 - src.test_runner.retry - INFO - Retrying in 4.04 seconds...
+2025-05-21 01:46:11,676 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-05-21 01:46:11,676 - src.test_runner.retry - WARNING - Error on attempt 3/4, retrying: OpenAI API error: Error code: 404 - {'error': {'message': 'This model is only supported in v1/responses and not in v1/chat/completions.', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-05-21 01:46:11,676 - src.test_runner.retry - INFO - Retrying in 8.00 seconds...
+2025-05-21 01:46:11,962 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:11,965 - src.test_runner.retry - ERROR - All retry attempts failed: OpenAI API error: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 32768 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+2025-05-21 01:46:11,965 - src.test_runner.executor - ERROR - Error running test for gpt_4_1: OpenAI API error: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 32768 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\openai_client.py", line 44, in generate
+    response = self.client.chat.completions.create(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\openai\resources\chat\completions\completions.py", line 925, in create
+    return self._post(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\openai\_base_client.py", line 1239, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\openai\_base_client.py", line 1034, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 32768 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 179, in run_test
+    response = self.retry_handler.with_retry(
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 106, in with_retry
+    raise last_exception
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 50, in with_retry
+    return func(*args, **kwargs)
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 180, in <lambda>
+    lambda: client.generate(full_prompt, model_config),
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\openai_client.py", line 77, in generate
+    raise Exception(f"OpenAI API error: {str(e)}")
+Exception: OpenAI API error: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 32768 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+2025-05-21 01:46:11,965 - src.test_runner.executor - INFO - Running factual test with long context on command_r_plus_08_2024
+2025-05-21 01:46:11,966 - src.test_runner.executor - INFO - Completed test for gpt_4_1, factual, long
+2025-05-21 01:46:11,966 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:46:12,311 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:12,311 - src.test_runner.retry - WARNING - Error on attempt 3/4, retrying: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 8192, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:12,311 - src.test_runner.retry - INFO - Retrying in 8.08 seconds...
+2025-05-21 01:46:12,411 - src.test_runner.executor - INFO - Generating response from command_r_plus_08_2024
+2025-05-21 01:46:12,737 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:12,737 - src.test_runner.retry - WARNING - Error on attempt 1/4, retrying: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:12,737 - src.test_runner.retry - INFO - Retrying in 2.02 seconds...
+2025-05-21 01:46:15,056 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:15,056 - src.test_runner.retry - WARNING - Error on attempt 2/4, retrying: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:15,056 - src.test_runner.retry - INFO - Retrying in 4.04 seconds...
+2025-05-21 01:46:15,720 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:15,726 - src.test_runner.retry - ERROR - All retry attempts failed: OpenAI API error: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 4096 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+2025-05-21 01:46:15,726 - src.test_runner.executor - ERROR - Error running test for gpt_4_turbo: OpenAI API error: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 4096 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\openai_client.py", line 44, in generate
+    response = self.client.chat.completions.create(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\openai\resources\chat\completions\completions.py", line 925, in create
+    return self._post(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\openai\_base_client.py", line 1239, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\openai\_base_client.py", line 1034, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 4096 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 179, in run_test
+    response = self.retry_handler.with_retry(
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 106, in with_retry
+    raise last_exception
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 50, in with_retry
+    return func(*args, **kwargs)
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 180, in <lambda>
+    lambda: client.generate(full_prompt, model_config),
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\openai_client.py", line 77, in generate
+    raise Exception(f"OpenAI API error: {str(e)}")
+Exception: OpenAI API error: Error code: 400 - {'error': {'message': 'max_tokens is too large: 128000. This model supports at most 4096 completion tokens, whereas you provided 128000.', 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'invalid_value'}}
+2025-05-21 01:46:15,726 - src.test_runner.executor - INFO - Running factual test with long context on command_r_plus_04_2024
+2025-05-21 01:46:15,726 - src.test_runner.executor - INFO - Completed test for gpt_4_turbo, factual, long
+2025-05-21 01:46:15,726 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:46:16,197 - src.test_runner.executor - INFO - Generating response from command_r_plus_04_2024
+2025-05-21 01:46:16,393 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:16,394 - src.test_runner.retry - ERROR - All retry attempts failed: OpenAI API error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-05-21 01:46:16,394 - src.test_runner.executor - ERROR - Error running test for o1_preview: OpenAI API error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\openai_client.py", line 44, in generate
+    response = self.client.chat.completions.create(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\openai\resources\chat\completions\completions.py", line 925, in create
+    return self._post(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\openai\_base_client.py", line 1239, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\openai\_base_client.py", line 1034, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 179, in run_test
+    response = self.retry_handler.with_retry(
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 106, in with_retry
+    raise last_exception
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 50, in with_retry
+    return func(*args, **kwargs)
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 180, in <lambda>
+    lambda: client.generate(full_prompt, model_config),
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\openai_client.py", line 77, in generate
+    raise Exception(f"OpenAI API error: {str(e)}")
+Exception: OpenAI API error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-05-21 01:46:16,396 - src.test_runner.executor - INFO - Running factual test with long context on command_r_plus
+2025-05-21 01:46:16,396 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:46:16,396 - src.test_runner.executor - INFO - Completed test for o1_preview, factual, long
+2025-05-21 01:46:16,552 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:16,552 - src.test_runner.retry - WARNING - Error on attempt 1/4, retrying: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:16,552 - src.test_runner.retry - INFO - Retrying in 2.02 seconds...
+2025-05-21 01:46:16,826 - src.test_runner.executor - INFO - Generating response from command_r_plus
+2025-05-21 01:46:17,166 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:17,168 - src.test_runner.retry - WARNING - Error on attempt 1/4, retrying: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:17,168 - src.test_runner.retry - INFO - Retrying in 2.02 seconds...
+2025-05-21 01:46:18,878 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:18,878 - src.test_runner.retry - WARNING - Error on attempt 2/4, retrying: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:18,878 - src.test_runner.retry - INFO - Retrying in 4.04 seconds...
+2025-05-21 01:46:19,397 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:19,397 - src.test_runner.retry - WARNING - Error on attempt 3/4, retrying: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:19,397 - src.test_runner.retry - INFO - Retrying in 8.08 seconds...
+2025-05-21 01:46:19,511 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:19,517 - src.test_runner.retry - WARNING - Error on attempt 2/4, retrying: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:19,517 - src.test_runner.retry - INFO - Retrying in 4.04 seconds...
+2025-05-21 01:46:20,400 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-05-21 01:46:20,406 - src.test_runner.retry - ERROR - All retry attempts failed: OpenAI API error: Error code: 404 - {'error': {'message': 'This model is only supported in v1/responses and not in v1/chat/completions.', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-05-21 01:46:20,406 - src.test_runner.executor - ERROR - Error running test for o1_pro: OpenAI API error: Error code: 404 - {'error': {'message': 'This model is only supported in v1/responses and not in v1/chat/completions.', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\openai_client.py", line 44, in generate
+    response = self.client.chat.completions.create(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\openai\_utils\_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\openai\resources\chat\completions\completions.py", line 925, in create
+    return self._post(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\openai\_base_client.py", line 1239, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\openai\_base_client.py", line 1034, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.NotFoundError: Error code: 404 - {'error': {'message': 'This model is only supported in v1/responses and not in v1/chat/completions.', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 179, in run_test
+    response = self.retry_handler.with_retry(
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 106, in with_retry
+    raise last_exception
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 50, in with_retry
+    return func(*args, **kwargs)
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 180, in <lambda>
+    lambda: client.generate(full_prompt, model_config),
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\openai_client.py", line 77, in generate
+    raise Exception(f"OpenAI API error: {str(e)}")
+Exception: OpenAI API error: Error code: 404 - {'error': {'message': 'This model is only supported in v1/responses and not in v1/chat/completions.', 'type': 'invalid_request_error', 'param': 'model', 'code': None}}
+2025-05-21 01:46:20,406 - src.test_runner.executor - INFO - Running factual test with long context on command_r_08_2024_v004
+2025-05-21 01:46:20,406 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:46:20,406 - src.test_runner.executor - INFO - Completed test for o1_pro, factual, long
+2025-05-21 01:46:20,734 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:20,735 - src.test_runner.retry - ERROR - All retry attempts failed: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 8192, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:20,735 - src.test_runner.executor - ERROR - Error running test for command_a_03_2025: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 8192, the maximum output for this model - received 128000.'}
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\others.py", line 39, in generate
+    response = self.client.chat(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\cohere\client.py", line 103, in _wrapped
+    return func(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\cohere\client.py", line 35, in _wrapped
+    return method(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\cohere\base_client.py", line 998, in chat
+    raise BadRequestError(
+cohere.errors.bad_request_error.BadRequestError: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 8192, the maximum output for this model - received 128000.'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 179, in run_test
+    response = self.retry_handler.with_retry(
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 106, in with_retry
+    raise last_exception
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 50, in with_retry
+    return func(*args, **kwargs)
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 180, in <lambda>
+    lambda: client.generate(full_prompt, model_config),
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\others.py", line 83, in generate
+    raise Exception(f"Cohere API error: {str(e)}")
+Exception: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 8192, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:20,740 - src.test_runner.executor - INFO - Running factual test with long context on command_r_08_2024_v003
+2025-05-21 01:46:20,740 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:46:20,740 - src.test_runner.executor - INFO - Completed test for command_a_03_2025, factual, long
+2025-05-21 01:46:20,847 - src.test_runner.executor - INFO - Generating response from command_r_08_2024_v004
+2025-05-21 01:46:21,181 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:21,181 - src.test_runner.retry - WARNING - Error on attempt 1/4, retrying: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:21,181 - src.test_runner.retry - INFO - Retrying in 2.02 seconds...
+2025-05-21 01:46:21,216 - src.test_runner.executor - INFO - Generating response from command_r_08_2024_v003
+2025-05-21 01:46:21,562 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:21,562 - src.test_runner.retry - WARNING - Error on attempt 1/4, retrying: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:21,562 - src.test_runner.retry - INFO - Retrying in 2.02 seconds...
+2025-05-21 01:46:23,229 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:23,229 - src.test_runner.retry - WARNING - Error on attempt 3/4, retrying: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:23,229 - src.test_runner.retry - INFO - Retrying in 8.08 seconds...
+2025-05-21 01:46:23,498 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:23,498 - src.test_runner.retry - WARNING - Error on attempt 2/4, retrying: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:23,498 - src.test_runner.retry - INFO - Retrying in 4.04 seconds...
+2025-05-21 01:46:23,866 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:23,866 - src.test_runner.retry - WARNING - Error on attempt 3/4, retrying: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:23,866 - src.test_runner.retry - INFO - Retrying in 8.08 seconds...
+2025-05-21 01:46:23,890 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:23,890 - src.test_runner.retry - WARNING - Error on attempt 2/4, retrying: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:23,890 - src.test_runner.retry - INFO - Retrying in 4.04 seconds...
+2025-05-21 01:46:27,877 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:27,878 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:27,878 - src.test_runner.retry - WARNING - Error on attempt 3/4, retrying: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:27,878 - src.test_runner.retry - ERROR - All retry attempts failed: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:27,878 - src.test_runner.retry - INFO - Retrying in 8.08 seconds...
+2025-05-21 01:46:27,878 - src.test_runner.executor - ERROR - Error running test for command_r_plus_08_2024: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\others.py", line 39, in generate
+    response = self.client.chat(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\cohere\client.py", line 103, in _wrapped
+    return func(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\cohere\client.py", line 35, in _wrapped
+    return method(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\cohere\base_client.py", line 998, in chat
+    raise BadRequestError(
+cohere.errors.bad_request_error.BadRequestError: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 179, in run_test
+    response = self.retry_handler.with_retry(
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 106, in with_retry
+    raise last_exception
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 50, in with_retry
+    return func(*args, **kwargs)
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 180, in <lambda>
+    lambda: client.generate(full_prompt, model_config),
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\others.py", line 83, in generate
+    raise Exception(f"Cohere API error: {str(e)}")
+Exception: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:27,881 - src.test_runner.executor - INFO - Running factual test with long context on command_r_03_2024
+2025-05-21 01:46:27,881 - src.test_runner.executor - INFO - Completed test for command_r_plus_08_2024, factual, long
+2025-05-21 01:46:27,881 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:46:28,237 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:28,237 - src.test_runner.retry - WARNING - Error on attempt 3/4, retrying: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:28,237 - src.test_runner.retry - INFO - Retrying in 8.08 seconds...
+2025-05-21 01:46:28,287 - src.test_runner.executor - INFO - Generating response from command_r_03_2024
+2025-05-21 01:46:28,653 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:28,655 - src.test_runner.retry - WARNING - Error on attempt 1/4, retrying: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:28,655 - src.test_runner.retry - INFO - Retrying in 2.02 seconds...
+2025-05-21 01:46:30,978 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:30,981 - src.test_runner.retry - WARNING - Error on attempt 2/4, retrying: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:30,981 - src.test_runner.retry - INFO - Retrying in 4.04 seconds...
+2025-05-21 01:46:31,642 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:31,642 - src.test_runner.retry - ERROR - All retry attempts failed: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:31,642 - src.test_runner.executor - ERROR - Error running test for command_r_plus_04_2024: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\others.py", line 39, in generate
+    response = self.client.chat(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\cohere\client.py", line 103, in _wrapped
+    return func(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\cohere\client.py", line 35, in _wrapped
+    return method(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\cohere\base_client.py", line 998, in chat
+    raise BadRequestError(
+cohere.errors.bad_request_error.BadRequestError: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 179, in run_test
+    response = self.retry_handler.with_retry(
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 106, in with_retry
+    raise last_exception
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 50, in with_retry
+    return func(*args, **kwargs)
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 180, in <lambda>
+    lambda: client.generate(full_prompt, model_config),
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\others.py", line 83, in generate
+    raise Exception(f"Cohere API error: {str(e)}")
+Exception: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:31,647 - src.test_runner.executor - INFO - Running factual test with long context on command_r
+2025-05-21 01:46:31,647 - src.test_runner.executor - INFO - Loading context from: data\contexts\long\contexts.json
+2025-05-21 01:46:31,647 - src.test_runner.executor - INFO - Completed test for command_r_plus_04_2024, factual, long
+2025-05-21 01:46:32,109 - src.test_runner.executor - INFO - Generating response from command_r
+2025-05-21 01:46:32,358 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:32,364 - src.test_runner.retry - ERROR - All retry attempts failed: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:32,364 - src.test_runner.executor - ERROR - Error running test for command_r_plus: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\others.py", line 39, in generate
+    response = self.client.chat(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\cohere\client.py", line 103, in _wrapped
+    return func(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\cohere\client.py", line 35, in _wrapped
+    return method(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\cohere\base_client.py", line 998, in chat
+    raise BadRequestError(
+cohere.errors.bad_request_error.BadRequestError: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 179, in run_test
+    response = self.retry_handler.with_retry(
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 106, in with_retry
+    raise last_exception
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 50, in with_retry
+    return func(*args, **kwargs)
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 180, in <lambda>
+    lambda: client.generate(full_prompt, model_config),
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\others.py", line 83, in generate
+    raise Exception(f"Cohere API error: {str(e)}")
+Exception: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:32,364 - src.test_runner.executor - INFO - Completed test for command_r_plus, factual, long
+2025-05-21 01:46:32,430 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:32,430 - src.test_runner.retry - WARNING - Error on attempt 1/4, retrying: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:32,432 - src.test_runner.retry - INFO - Retrying in 2.02 seconds...
+2025-05-21 01:46:34,764 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:34,764 - src.test_runner.retry - WARNING - Error on attempt 2/4, retrying: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:34,764 - src.test_runner.retry - INFO - Retrying in 4.04 seconds...
+2025-05-21 01:46:35,347 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:35,347 - src.test_runner.retry - WARNING - Error on attempt 3/4, retrying: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:35,347 - src.test_runner.retry - INFO - Retrying in 8.08 seconds...
+2025-05-21 01:46:36,448 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:36,448 - src.test_runner.retry - ERROR - All retry attempts failed: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:36,448 - src.test_runner.executor - ERROR - Error running test for command_r_08_2024_v004: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\others.py", line 39, in generate
+    response = self.client.chat(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\cohere\client.py", line 103, in _wrapped
+    return func(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\cohere\client.py", line 35, in _wrapped
+    return method(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\cohere\base_client.py", line 998, in chat
+    raise BadRequestError(
+cohere.errors.bad_request_error.BadRequestError: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 179, in run_test
+    response = self.retry_handler.with_retry(
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 106, in with_retry
+    raise last_exception
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 50, in with_retry
+    return func(*args, **kwargs)
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 180, in <lambda>
+    lambda: client.generate(full_prompt, model_config),
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\others.py", line 83, in generate
+    raise Exception(f"Cohere API error: {str(e)}")
+Exception: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:36,448 - src.test_runner.executor - INFO - Completed test for command_r_08_2024_v004, factual, long
+2025-05-21 01:46:36,657 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:36,657 - src.test_runner.retry - ERROR - All retry attempts failed: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:36,657 - src.test_runner.executor - ERROR - Error running test for command_r_08_2024_v003: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\others.py", line 39, in generate
+    response = self.client.chat(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\cohere\client.py", line 103, in _wrapped
+    return func(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\cohere\client.py", line 35, in _wrapped
+    return method(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\cohere\base_client.py", line 998, in chat
+    raise BadRequestError(
+cohere.errors.bad_request_error.BadRequestError: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 179, in run_test
+    response = self.retry_handler.with_retry(
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 106, in with_retry
+    raise last_exception
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 50, in with_retry
+    return func(*args, **kwargs)
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 180, in <lambda>
+    lambda: client.generate(full_prompt, model_config),
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\others.py", line 83, in generate
+    raise Exception(f"Cohere API error: {str(e)}")
+Exception: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:36,659 - src.test_runner.executor - INFO - Completed test for command_r_08_2024_v003, factual, long
+2025-05-21 01:46:39,129 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:39,129 - src.test_runner.retry - WARNING - Error on attempt 3/4, retrying: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:39,129 - src.test_runner.retry - INFO - Retrying in 8.08 seconds...
+2025-05-21 01:46:43,787 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:43,787 - src.test_runner.retry - ERROR - All retry attempts failed: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:43,787 - src.test_runner.executor - ERROR - Error running test for command_r_03_2024: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\others.py", line 39, in generate
+    response = self.client.chat(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\cohere\client.py", line 103, in _wrapped
+    return func(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\cohere\client.py", line 35, in _wrapped
+    return method(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\cohere\base_client.py", line 998, in chat
+    raise BadRequestError(
+cohere.errors.bad_request_error.BadRequestError: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 179, in run_test
+    response = self.retry_handler.with_retry(
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 106, in with_retry
+    raise last_exception
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 50, in with_retry
+    return func(*args, **kwargs)
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 180, in <lambda>
+    lambda: client.generate(full_prompt, model_config),
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\others.py", line 83, in generate
+    raise Exception(f"Cohere API error: {str(e)}")
+Exception: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:43,787 - src.test_runner.executor - INFO - Completed test for command_r_03_2024, factual, long
+2025-05-21 01:46:47,563 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2025-05-21 01:46:47,564 - src.test_runner.retry - ERROR - All retry attempts failed: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:47,564 - src.test_runner.executor - ERROR - Error running test for command_r: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\others.py", line 39, in generate
+    response = self.client.chat(
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\cohere\client.py", line 103, in _wrapped
+    return func(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\cohere\client.py", line 35, in _wrapped
+    return method(*args, **kwargs)
+  File "C:\Users\Abhimanyu\anaconda3\envs\testing\lib\site-packages\cohere\base_client.py", line 998, in chat
+    raise BadRequestError(
+cohere.errors.bad_request_error.BadRequestError: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 179, in run_test
+    response = self.retry_handler.with_retry(
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 106, in with_retry
+    raise last_exception
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\retry.py", line 50, in with_retry
+    return func(*args, **kwargs)
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\test_runner\executor.py", line 180, in <lambda>
+    lambda: client.generate(full_prompt, model_config),
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\clients\others.py", line 83, in generate
+    raise Exception(f"Cohere API error: {str(e)}")
+Exception: Cohere API error: status_code: 400, body: {'message': 'too many tokens: max tokens must be less than or equal to 4096, the maximum output for this model - received 128000.'}
+2025-05-21 01:46:47,566 - src.test_runner.executor - INFO - Completed test for command_r, factual, long
+2025-05-21 01:46:47,567 - src.reporting.html_generator - ERROR - Error generating HTML report: '>' not supported between instances of 'NoneType' and 'float'
+Traceback (most recent call last):
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\reporting\html_generator.py", line 35, in generate_report
+    html_content = self._generate_html(results)
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\reporting\html_generator.py", line 181, in _generate_html
+    html += self._generate_summary_table(results)
+  File "D:\Testing\Model-Testing-Manual-Framework-main\src\reporting\html_generator.py", line 238, in _generate_summary_table
+    score_class = "high" if score > 0.8 else "medium" if score > 0.5 else "low"
+TypeError: '>' not supported between instances of 'NoneType' and 'float'
+2025-05-21 01:46:47,568 - __main__ - INFO - Results saved to ./results\factual\test_results_long_20250521_014647.html
+2025-05-21 01:46:47,617 - __main__ - INFO - Comparison report saved to ./results\comparisons\comparison_factual_long_20250521_014647.yaml
+2025-05-21 01:46:48,520 - src.reporting.visualizations_reporter - INFO - Generated 1 visualizations in ./results\visualizations
+2025-05-21 01:46:48,520 - __main__ - INFO - Visualizations generated in ./results\visualizations
+2025-05-21 01:46:48,520 - __main__ - INFO - Testing completed successfully

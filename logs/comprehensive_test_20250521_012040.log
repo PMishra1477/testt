@@ -1,0 +1,132 @@
+2025-05-21 01:20:40,983 - INFO - Starting comprehensive testing suite
+2025-05-21 01:20:40,983 - INFO - Test categories: code, context, creative, factual, hallucination, image_prompts, instruction, meta_prompting, ppt_writing, reasoning
+2025-05-21 01:20:40,987 - INFO - Context lengths: short, medium, long
+2025-05-21 01:20:40,987 - INFO - Output format: html
+2025-05-21 01:20:40,987 - INFO - Parallel execution: Enabled
+2025-05-21 01:20:41,033 - INFO - Testing all available models
+2025-05-21 01:20:41,034 - INFO - Starting comprehensive testing of 30 test configurations
+2025-05-21 01:20:41,034 - INFO - Starting test configuration: code - short
+2025-05-21 01:20:41,034 - INFO - Running test: python -m src.main --all-models --test code --context short --output html --parallel
+2025-05-21 01:22:24,606 - INFO - Test completed successfully in 1 minutes 43 seconds
+2025-05-21 01:22:24,606 - INFO - Progress: 1/30 tests completed (3.3%)
+2025-05-21 01:22:26,616 - INFO - Starting test configuration: code - medium
+2025-05-21 01:22:26,616 - INFO - Running test: python -m src.main --all-models --test code --context medium --output html --parallel
+2025-05-21 01:24:05,181 - INFO - Test completed successfully in 1 minutes 38 seconds
+2025-05-21 01:24:05,181 - INFO - Progress: 2/30 tests completed (6.7%)
+2025-05-21 01:24:07,185 - INFO - Starting test configuration: code - long
+2025-05-21 01:24:07,185 - INFO - Running test: python -m src.main --all-models --test code --context long --output html --parallel
+2025-05-21 01:25:51,733 - INFO - Test completed successfully in 1 minutes 44 seconds
+2025-05-21 01:25:51,733 - INFO - Progress: 3/30 tests completed (10.0%)
+2025-05-21 01:25:53,739 - INFO - Starting test configuration: context - short
+2025-05-21 01:25:53,742 - INFO - Running test: python -m src.main --all-models --test context --context short --output html --parallel
+2025-05-21 01:28:13,688 - INFO - Test completed successfully in 2 minutes 19 seconds
+2025-05-21 01:28:13,688 - INFO - Progress: 4/30 tests completed (13.3%)
+2025-05-21 01:28:15,701 - INFO - Starting test configuration: context - medium
+2025-05-21 01:28:15,702 - INFO - Running test: python -m src.main --all-models --test context --context medium --output html --parallel
+2025-05-21 01:30:13,699 - INFO - Test completed successfully in 1 minutes 57 seconds
+2025-05-21 01:30:13,699 - INFO - Progress: 5/30 tests completed (16.7%)
+2025-05-21 01:30:15,699 - INFO - Starting test configuration: context - long
+2025-05-21 01:30:15,699 - INFO - Running test: python -m src.main --all-models --test context --context long --output html --parallel
+2025-05-21 01:32:26,139 - INFO - Test completed successfully in 2 minutes 10 seconds
+2025-05-21 01:32:26,139 - INFO - Progress: 6/30 tests completed (20.0%)
+2025-05-21 01:32:28,141 - INFO - Starting test configuration: creative - short
+2025-05-21 01:32:28,141 - INFO - Running test: python -m src.main --all-models --test creative --context short --output html --parallel
+2025-05-21 01:35:03,407 - INFO - Test completed successfully in 2 minutes 35 seconds
+2025-05-21 01:35:03,407 - INFO - Progress: 7/30 tests completed (23.3%)
+2025-05-21 01:35:05,419 - INFO - Starting test configuration: creative - medium
+2025-05-21 01:35:05,419 - INFO - Running test: python -m src.main --all-models --test creative --context medium --output html --parallel
+2025-05-21 01:37:43,396 - INFO - Test completed successfully in 2 minutes 37 seconds
+2025-05-21 01:37:43,399 - INFO - Progress: 8/30 tests completed (26.7%)
+2025-05-21 01:37:45,408 - INFO - Starting test configuration: creative - long
+2025-05-21 01:37:45,408 - INFO - Running test: python -m src.main --all-models --test creative --context long --output html --parallel
+2025-05-21 01:40:29,270 - INFO - Test completed successfully in 2 minutes 43 seconds
+2025-05-21 01:40:29,276 - INFO - Progress: 9/30 tests completed (30.0%)
+2025-05-21 01:40:31,291 - INFO - Starting test configuration: factual - short
+2025-05-21 01:40:31,291 - INFO - Running test: python -m src.main --all-models --test factual --context short --output html --parallel
+2025-05-21 01:42:40,192 - INFO - Test completed successfully in 2 minutes 8 seconds
+2025-05-21 01:42:40,192 - INFO - Progress: 10/30 tests completed (33.3%)
+2025-05-21 01:42:42,202 - INFO - Starting test configuration: factual - medium
+2025-05-21 01:42:42,202 - INFO - Running test: python -m src.main --all-models --test factual --context medium --output html --parallel
+2025-05-21 01:44:42,331 - INFO - Test completed successfully in 2 minutes 0 seconds
+2025-05-21 01:44:42,331 - INFO - Progress: 11/30 tests completed (36.7%)
+2025-05-21 01:44:44,340 - INFO - Starting test configuration: factual - long
+2025-05-21 01:44:44,340 - INFO - Running test: python -m src.main --all-models --test factual --context long --output html --parallel
+2025-05-21 01:46:51,337 - INFO - Test completed successfully in 2 minutes 6 seconds
+2025-05-21 01:46:51,338 - INFO - Progress: 12/30 tests completed (40.0%)
+2025-05-21 01:46:53,339 - INFO - Starting test configuration: hallucination - short
+2025-05-21 01:46:53,339 - INFO - Running test: python -m src.main --all-models --test hallucination --context short --output html --parallel
+2025-05-21 01:48:54,401 - INFO - Test completed successfully in 2 minutes 1 seconds
+2025-05-21 01:48:54,401 - INFO - Progress: 13/30 tests completed (43.3%)
+2025-05-21 01:48:56,409 - INFO - Starting test configuration: hallucination - medium
+2025-05-21 01:48:56,409 - INFO - Running test: python -m src.main --all-models --test hallucination --context medium --output html --parallel
+2025-05-21 01:50:52,998 - INFO - Test completed successfully in 1 minutes 56 seconds
+2025-05-21 01:50:53,000 - INFO - Progress: 14/30 tests completed (46.7%)
+2025-05-21 01:50:55,000 - INFO - Starting test configuration: hallucination - long
+2025-05-21 01:50:55,000 - INFO - Running test: python -m src.main --all-models --test hallucination --context long --output html --parallel
+2025-05-21 01:52:55,897 - INFO - Test completed successfully in 2 minutes 0 seconds
+2025-05-21 01:52:55,897 - INFO - Progress: 15/30 tests completed (50.0%)
+2025-05-21 01:52:57,904 - INFO - Starting test configuration: image_prompts - short
+2025-05-21 01:52:57,904 - INFO - Running test: python -m src.main --all-models --test image_prompts --context short --output html --parallel
+2025-05-21 01:55:29,221 - INFO - Test completed successfully in 2 minutes 31 seconds
+2025-05-21 01:55:29,221 - INFO - Progress: 16/30 tests completed (53.3%)
+2025-05-21 01:55:31,226 - INFO - Starting test configuration: image_prompts - medium
+2025-05-21 01:55:31,226 - INFO - Running test: python -m src.main --all-models --test image_prompts --context medium --output html --parallel
+2025-05-21 01:58:18,762 - INFO - Test completed successfully in 2 minutes 47 seconds
+2025-05-21 01:58:18,762 - INFO - Progress: 17/30 tests completed (56.7%)
+2025-05-21 01:58:20,774 - INFO - Starting test configuration: image_prompts - long
+2025-05-21 01:58:20,774 - INFO - Running test: python -m src.main --all-models --test image_prompts --context long --output html --parallel
+2025-05-21 02:00:50,177 - INFO - Test completed successfully in 2 minutes 29 seconds
+2025-05-21 02:00:50,177 - INFO - Progress: 18/30 tests completed (60.0%)
+2025-05-21 02:00:52,182 - INFO - Starting test configuration: instruction - short
+2025-05-21 02:00:52,183 - INFO - Running test: python -m src.main --all-models --test instruction --context short --output html --parallel
+2025-05-21 02:03:05,588 - INFO - Test completed successfully in 2 minutes 13 seconds
+2025-05-21 02:03:05,588 - INFO - Progress: 19/30 tests completed (63.3%)
+2025-05-21 02:03:07,594 - INFO - Starting test configuration: instruction - medium
+2025-05-21 02:03:07,594 - INFO - Running test: python -m src.main --all-models --test instruction --context medium --output html --parallel
+2025-05-21 02:05:11,323 - INFO - Test completed successfully in 2 minutes 3 seconds
+2025-05-21 02:05:11,323 - INFO - Progress: 20/30 tests completed (66.7%)
+2025-05-21 02:05:13,333 - INFO - Starting test configuration: instruction - long
+2025-05-21 02:05:13,333 - INFO - Running test: python -m src.main --all-models --test instruction --context long --output html --parallel
+2025-05-21 02:07:14,089 - INFO - Test completed successfully in 2 minutes 0 seconds
+2025-05-21 02:07:14,091 - INFO - Progress: 21/30 tests completed (70.0%)
+2025-05-21 02:07:16,092 - INFO - Starting test configuration: meta_prompting - short
+2025-05-21 02:07:16,092 - INFO - Running test: python -m src.main --all-models --test meta_prompting --context short --output html --parallel
+2025-05-21 02:09:44,370 - INFO - Test completed successfully in 2 minutes 28 seconds
+2025-05-21 02:09:44,370 - INFO - Progress: 22/30 tests completed (73.3%)
+2025-05-21 02:09:46,370 - INFO - Starting test configuration: meta_prompting - medium
+2025-05-21 02:09:46,370 - INFO - Running test: python -m src.main --all-models --test meta_prompting --context medium --output html --parallel
+2025-05-21 02:12:04,392 - INFO - Test completed successfully in 2 minutes 18 seconds
+2025-05-21 02:12:04,392 - INFO - Progress: 23/30 tests completed (76.7%)
+2025-05-21 02:12:06,393 - INFO - Starting test configuration: meta_prompting - long
+2025-05-21 02:12:06,393 - INFO - Running test: python -m src.main --all-models --test meta_prompting --context long --output html --parallel
+2025-05-21 02:14:28,654 - INFO - Test completed successfully in 2 minutes 22 seconds
+2025-05-21 02:14:28,654 - INFO - Progress: 24/30 tests completed (80.0%)
+2025-05-21 02:14:30,657 - INFO - Starting test configuration: ppt_writing - short
+2025-05-21 02:14:30,657 - INFO - Running test: python -m src.main --all-models --test ppt_writing --context short --output html --parallel
+2025-05-21 02:16:51,213 - INFO - Test completed successfully in 2 minutes 20 seconds
+2025-05-21 02:16:51,213 - INFO - Progress: 25/30 tests completed (83.3%)
+2025-05-21 02:16:53,219 - INFO - Starting test configuration: ppt_writing - medium
+2025-05-21 02:16:53,219 - INFO - Running test: python -m src.main --all-models --test ppt_writing --context medium --output html --parallel
+2025-05-21 02:19:10,718 - INFO - Test completed successfully in 2 minutes 17 seconds
+2025-05-21 02:19:10,718 - INFO - Progress: 26/30 tests completed (86.7%)
+2025-05-21 02:19:12,720 - INFO - Starting test configuration: ppt_writing - long
+2025-05-21 02:19:12,720 - INFO - Running test: python -m src.main --all-models --test ppt_writing --context long --output html --parallel
+2025-05-21 02:21:36,537 - INFO - Test completed successfully in 2 minutes 23 seconds
+2025-05-21 02:21:36,538 - INFO - Progress: 27/30 tests completed (90.0%)
+2025-05-21 02:21:38,546 - INFO - Starting test configuration: reasoning - short
+2025-05-21 02:21:38,546 - INFO - Running test: python -m src.main --all-models --test reasoning --context short --output html --parallel
+2025-05-21 02:23:40,000 - INFO - Test completed successfully in 2 minutes 1 seconds
+2025-05-21 02:23:40,001 - INFO - Progress: 28/30 tests completed (93.3%)
+2025-05-21 02:23:42,010 - INFO - Starting test configuration: reasoning - medium
+2025-05-21 02:23:42,010 - INFO - Running test: python -m src.main --all-models --test reasoning --context medium --output html --parallel
+2025-05-21 02:25:44,319 - INFO - Test completed successfully in 2 minutes 2 seconds
+2025-05-21 02:25:44,320 - INFO - Progress: 29/30 tests completed (96.7%)
+2025-05-21 02:25:46,328 - INFO - Starting test configuration: reasoning - long
+2025-05-21 02:25:46,328 - INFO - Running test: python -m src.main --all-models --test reasoning --context long --output html --parallel
+2025-05-21 02:27:54,803 - INFO - Test completed successfully in 2 minutes 8 seconds
+2025-05-21 02:27:54,804 - INFO - Progress: 30/30 tests completed (100.0%)
+2025-05-21 02:27:56,815 - INFO - Generating model performance summary...
+2025-05-21 02:27:56,817 - WARNING - No result files found for model summary
+2025-05-21 02:27:56,821 - INFO - Comprehensive testing completed. Summary saved to ./results\comprehensive_test_summary_20250521_012040.txt
+2025-05-21 02:27:56,821 - INFO - Total duration: 1 hours 7 minutes 15 seconds
+2025-05-21 02:27:56,822 - INFO - Success rate: 30/30 (100.0%)

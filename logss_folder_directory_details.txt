@@ -1,0 +1,36 @@
+.
+├── logs
+│   ├── comprehensive_test_20250521_012040.log
+│   ├── test_run_20250521_012048.log
+│   ├── test_run_20250521_012233.log
+│   ├── test_run_20250521_012414.log
+│   ├── test_run_20250521_012600.log
+│   ├── test_run_20250521_012824.log
+│   ├── test_run_20250521_013022.log
+│   ├── test_run_20250521_013235.log
+│   ├── test_run_20250521_013512.log
+│   ├── test_run_20250521_013752.log
+│   ├── test_run_20250521_014038.log
+│   ├── test_run_20250521_014249.log
+│   ├── test_run_20250521_014451.log
+│   ├── test_run_20250521_014700.log
+│   ├── test_run_20250521_014903.log
+│   ├── test_run_20250521_015102.log
+│   ├── test_run_20250521_015305.log
+│   ├── test_run_20250521_015538.log
+│   ├── test_run_20250521_015827.log
+│   ├── test_run_20250521_020100.log
+│   ├── test_run_20250521_020315.log
+│   ├── test_run_20250521_020520.log
+│   ├── test_run_20250521_020723.log
+│   ├── test_run_20250521_020954.log
+│   ├── test_run_20250521_021213.log
+│   ├── test_run_20250521_021435.log
+│   ├── test_run_20250521_021657.log
+│   ├── test_run_20250521_021917.log
+│   ├── test_run_20250521_022143.log
+│   ├── test_run_20250521_022346.log
+│   └── test_run_20250521_022550.log
+└── logss_folder_directory_details.txt
+
+2 directories, 32 files
